@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://kit.fontawesome.com/eb75260fb3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,300,0,0" />
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"
+    integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.4.0/axios.min.js"
+    integrity="sha512-uMtXmF28A2Ab/JJO2t/vYhlaa/3ahUOgj1Zf27M5rOo8/+fcTUVH0/E0ll68njmjrLqOBjXM3V9NiPFL5ywWPQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <link rel="stylesheet" href="css/base.css">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <section class="page">
+    <section class="headNav">
+      <nav>
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Contact</a>
+        <a href="">Events</a>
+        <a href="">Blog</a>
+        <a href="">Enquiries</a>
+      </nav>
+      <h1>Your Academy</h1>
+    </section>
+
+    <style>
+      .headNav {
+        display: flex;
+        width: 80%;
+        padding: 3vh 10%;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      .headNav h1 {
+        font-size: 2.5rem;
+      }
+
+      .headNav nav {
+        display: flex;
+        gap: 0 1.3rem;
+      }
+
+      .headNav nav a {
+        color: rgb(53, 53, 53);
+      }
+    </style>
+
+    <section class="headBox">
+      <img src="icons/dot.png" id="dotIcon1">
+      <img src="icons/dot.png" id="dotIcon2">
+      <section class="left">
+        <article>
+          <strong>
+            <span>Empowering Minds, Shaping Futures</span>
+          </strong>
+          <small>We're delighted to have you on our virtual campus. Discover all the amazing opportunities, resources,
+            and educational experiences that await you here. Join us on a journey of knowledge, growth, and
+            discovery!</small>
+        </article>
+        <button class="material-symbols-outlined">east</button>
+      </section>
+
+      <style>
+        .headBox .left {
+          width: 50%;
+          display: flex;
+          align-items: flex-start;
+          flex-direction: column;
+          gap: 2rem 0;
+        }
+
+        .headBox .left article {
+          display: flex;
+          gap: 0.3rem 0;
+          align-items: flex-start;
+          flex-direction: column;
+        }
+
+        .headBox .left button {
+          background: var(--theme);
+          padding: 8px 10px;
+          border-radius: 2px;
+          color: white;
+          font-weight: 600;
+          min-width: 100px;
+        }
+
+        .headBox .left strong {
+          font-size: 2.7rem;
+        }
+      </style>
+
+      <section class="right">
+        <div class="childBox" data-aos="fade-up">
+          <img src="headBg.png" alt="">
+          <img id="childX" src="icons/x.png" width="20" height="20">
+        </div>
+      </section>
+
+
+
+    </section>
+
+    <section class="infoBox">
+      <p data-aos="fade-up">
+        <strong>50+</strong>
+        <span>Expert Tutors</span>
+      </p>
+      <hr data-aos="fade-up">
+      <p data-aos="fade-up">
+        <strong>20+</strong>
+        <span>Facilities</span>
+      </p>
+      <hr data-aos="fade-up">
+      <p data-aos="fade-up">
+        <strong>200+</strong>
+        <span>Students</span>
+      </p>
+      <hr data-aos="fade-up">
+      <p data-aos="fade-up">
+        <strong>300+</strong>
+        <span>Staff Members</span>
+      </p>
+
+      <style>
+        .infoBox {
+          width: 80%;
+          padding: 3vh 10%;
+          background: #132052;
+          background: #415cc0;
+          background: #637fe4;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        .infoBox p {
+          display: flex;
+          color: white;
+          flex-direction: column;
+        }
+
+        .infoBox p strong {
+          font-size: 2rem;
+        }
+      </style>
+    </section>
+
+    <section class="aboutBox">
+      <section class="left">
+        <div class="imgBox" style="background-image: url(images/teacher-helping-kids-class_23-2148892532.avif);">
+          <div class="material-symbols-outlined">school</div>
+        </div>
+      </section>
+      <section class="right">
+        <article>
+          <span>About Us</span>
+          <strong>Build Your Skills With Flexible Online Courses</strong>
+          <p>
+            Our mission is to provide a nurturing and inclusive environment where every student can thrive academically,
+            socially, and personally. We strive to empower our students with the knowledge, skills, and values they need
+            to become responsible global citizens.
+          </p>
+          <a>More</a>
+        </article>
+      </section>
+
+      <style>
+        .aboutBox {
+          width: 80%;
+          padding: 10vh 10%;
+          display: flex;
+          gap: 5vw;
+          justify-content: center;
+        }
+
+        .aboutBox .left .imgBox {
+          width: 330px;
+          position: relative;
+          height: 370px;
+          background-position: center;
+          background-size: cover;
+          border-radius: 5px 30px 5px 30px;
+        }
+
+        .aboutBox .left .imgBox div {
+          width: 80px;
+          height: 70px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          background: #637fe4;
+          color: wheat;
+          font-size: 3rem;
+          border-radius: 5px 30px 5px 30px;
+          /* background: black; */
+          bottom: -30px;
+          right: -35px;
+        }
+
+        .aboutBox .right {
+          width: 40%;
+        }
+
+        .aboutBox .right article {
+          display: flex;
+          flex-direction: column;
+          gap: 0.3rem 0;
+          align-items: flex-start;
+        }
+
+        .aboutBox .right article strong {
+          font-size: 1.5rem;
+        }
+
+        .aboutBox .right article a {
+          background: #637fe4;
+          color: white;
+          padding: 5px 10px;
+          border-radius: 3px;
+        }
+      </style>
+    </section>
+  </section>
+
+
+  <style>
+    #dotIcon1,
+    #dotIcon2 {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+    }
+
+    #dotIcon1 {
+      top: 0;
+      left: -50px;
+    }
+
+    #dotIcon2 {
+      bottom: 0;
+      right: -50px;
+    }
+
+    .headBox {
+      position: relative;
+      margin-top: 5vh;
+      width: 80%;
+      padding: 0 10%;
+      display: flex;
+      overflow-x: hidden;
+      justify-content: space-between;
+    }
+
+    @media all and (max-width:1050px) {
+      .headNav {
+        flex-direction: column-reverse;
+      }
+
+      .headNav strong,
+      .headNav nav {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+
+      .headBox,
+      .aboutBox {
+        flex-direction: column;
+        align-items: center;
+        gap: 2.5rem 0;
+      }
+
+      .aboutBox .right article {
+        width: 100%;
+      }
+
+      .headBox .left,
+      .headBox .right,
+      .aboutBox .left,
+      .aboutBox .right,
+      .aboutBox .right article {
+        width: 100%;
+        display: flex;
+        text-align: center;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+
+
+    @media all and (max-width:850px) {
+      .infoBox {
+        flex-direction: column;
+        text-align: center;
+        gap: 1rem 0;
+        align-items: center;
+      }
+
+      .infoBox hr {
+        display: flex;
+        width: 100px;
+        border-top: 2px solid wheat;
+      }
+    }
+
+    @media all and (max-width:500px) {
+      .aboutBox .left .imgBox div {
+        right: 0;
+        bottom: 0;
+      }
+    }
+
+    .childBox {
+      width: 300px;
+      height: 400px;
+      border-radius: 250px 250px 0 0;
+      border-left: 3px solid var(--theme);
+      border-right: 3px solid var(--theme);
+      border-top: 3px solid var(--theme);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+    }
+
+    div img:nth-child(1) {
+      position: absolute;
+      bottom: 0;
+    }
+
+    div #childX {
+      position: absolute;
+      top: 23px;
+      rotate: -40deg;
+      right: 45px;
+    }
+  </style>
+
+
+
+  <script>
+    anime({
+      loop: true,
+      targets: '#childX',
+      rotate: '1turn',
+      duration: 5000,
+      easing: 'linear'
+    })
+  </script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
